@@ -36,7 +36,6 @@ body {
 	padding-right: 40px;
 }
 
-
 .b1 h1, .b2 h1, .b3 h1 {
     display: flex;
        justify-content: flex-end;
@@ -102,4 +101,12 @@ body {
 h1 {
     margin: 0 auto;
 }
+
+
+
+
+
+
+
+
 
