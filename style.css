@@ -24,16 +24,16 @@ body {
        align-items: center;
        gap: 20px;
 	color: #2A2A2A;
-	font-size: 45px;
+	font-size: 37px;
     padding-left: 40px; 
-    padding-right: 40px;
+    padding-right: 150px;
     
 }
 
 .icon {
-	width: 100px;
-	height: 100px;
-	padding-right: 40px;
+	width: 75px;
+	height: 75px;
+	padding-right: 20px;
 }
 
 .b1 h1, .b2 h1, .b3 h1 {
@@ -42,7 +42,7 @@ body {
        align-items: center;
 	background: #E65C00;
 	color: #2A2A2A;
-    font-size: 24px;
+    font-size: 17px;
     font-weight: 300;
     padding: 10px 40px;
     border-radius: 10px;
@@ -59,7 +59,7 @@ body {
     height: 100vh;
     background: #333333;
     border-right: 3px solid black;
-    font-size: 10px;
+    font-size: 8px;
 }
 
 .box-menu {
@@ -83,7 +83,7 @@ body {
 
 .categories {
     margin-top: 15px;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 
