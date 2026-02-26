@@ -21,12 +21,13 @@ body {
 
 .shapka {
     display: flex;
-       justify-content: flex-start;
        align-items: center;
+       gap: 20px;
 	color: #2A2A2A;
 	font-size: 45px;
     padding-left: 40px; 
     padding-right: 40px;
+    
 }
 
 .icon {
@@ -36,9 +37,9 @@ body {
 }
 
 .b1 h1, .b2 h1, .b3 h1 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+       justify-content: flex-end;
+       align-items: center;
 	background: #E65C00;
 	color: #2A2A2A;
     font-size: 24px;
@@ -47,14 +48,56 @@ body {
     border-radius: 10px;
 }
 
-.left-menu {
-    width: 200px;
-    height: 100vh;
-    background: white;
-    border-right: 3px solid black;
+.menu-blocks {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
 }
 
-.text-menu {
+.left-menu {
+    width: 190px;
+    height: 100vh;
+    background: #333333;
+    border-right: 3px solid black;
+    font-size: 10px;
+}
+
+.box-menu {
+    width: 150px;
+    margin: 0 20px 0px 15px;
+    padding-top: 25px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.box-menu2 {
+    width: 150px;
+    margin: 0 20px 0px 15px;
+    padding-top: px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+
+.categories {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+
+.line {
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        black,
+        transparent
+    );
+    margin: 8px 0;
+}
+
+h1 {
     margin: 0 auto;
 }
-
