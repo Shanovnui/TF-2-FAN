@@ -112,18 +112,22 @@ main {
 .line-header1 {
     height: 1px;
     background: black;
-    margin-top: 23px;
+    margin-top: 31px; /* Мне 15px Маричке 23px */
     margin-right: 5px;
     margin-bottom: 0px;
 }
 
 .line-header2 {
-    background: white;
+    background: #2A2A2A;
     height: 75px;
 }
 
 h1 {
     margin: 0 auto;
+}
+
+p {
+    line-height: 1.6;
 }
 
 .text-menu2 {
@@ -146,8 +150,10 @@ a:hover {
 }
 
 .main-header {
-    background: white;
+    font-family: 'Galindo', sans-serif;
+    background: #2A2A2A;
     width: 100%;
+    color: #FF6600;
     padding-left: 20px;
     padding-right: px;
     padding-top: 15px;
@@ -155,13 +161,17 @@ a:hover {
 
 .text1 {
     flex: 1;
+    font-size: 16px;
+    font-family: 'Galindo', sans-serif;
 }
 
 .box {
     display: flex;
     border: 1px solid black;
     padding: 1px;
-    width: 300px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 290px;
     height: 300px;
     background: gray;
 }
@@ -169,8 +179,6 @@ a:hover {
 .box-name {
 
 }
-
-
 
 
 
