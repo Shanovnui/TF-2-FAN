@@ -3,6 +3,12 @@ body {
 	background: #2A2A2A;
 }
 
+main {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -46,6 +52,7 @@ body {
     font-weight: 300;
     padding: 10px 40px;
     border-radius: 10px;
+    text-shadow: 1px 1px 0px #2A2A2A;
 }
 
 .menu-blocks {
@@ -56,7 +63,7 @@ body {
 
 .left-menu {
     width: 190px;
-    height: 100%;
+    min-height: 100vh;
     background: #333333;
     border-right: 3px solid black;
     font-size: 7px;
@@ -96,12 +103,31 @@ body {
     margin: 8px 0;
 }
 
+.line-header {
+    height: 1px;
+    background: black;
+    margin: 8px 0;
+}
+
+.line-header1 {
+    height: 1px;
+    background: black;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+.line-header2 {
+    background: white;
+    height: 75px;
+}
+
 h1 {
     margin: 0 auto;
 }
 
 .text-menu2 {
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 
 a {
@@ -114,7 +140,35 @@ a:hover {
   color: black;
 }
 
+.link-top {
+    text-decoration: none;
+    color: black;
+}
 
+.main-header {
+    background: white;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: px;
+    padding-top: 15px;
+}
+
+.text1 {
+    flex: 1;
+}
+
+.box {
+    display: flex;
+    border: 1px solid black;
+    padding: 1px;
+    width: 300px;
+    height: 300px;
+    background: gray;
+}
+
+.box-name {
+
+}
 
 
 
