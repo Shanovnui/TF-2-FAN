@@ -111,7 +111,7 @@ main {
 .line-header1 {
     height: 1px;
     background: black;
-    margin-top: 23px; /* Мне 23px Маричке 30px */
+    margin-top: 30px; /* Мне 23px Маричке 30px */
     margin-right: 5px;
     margin-bottom: 0px;
 }
@@ -282,3 +282,4 @@ a:hover {
 .gameplay-text1 {
     margin-top: 10px;
 }
+
