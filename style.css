@@ -23,12 +23,45 @@ p {
 
 a {
     text-decoration: none;
-    color: #FF6600;
+	color: #FF6600;
 }
 
 a:hover {
   text-decoration: underline;
   color: black;
+}
+
+.left-menu-links {
+  color: #FF6600;
+}
+
+.links-text-table {
+	text-decoration: underline;
+	color: black;
+}
+
+.links-text:hover {
+	text-decoration-color: black;
+}
+
+.links-text-table:hover {
+	color: #2A2A2A;
+}
+
+.links-text-footer:hover {
+	color: #2A2A2A;
+}
+
+.links-text-footer {
+	color: #FF6600;
+}
+
+.links-text-series:hover {
+	color: #2A2A2A;
+}
+
+.links-text-series {
+	color: black;
 }
 
 table { border-collapse: collapse; margin-bottom: 10px; }
@@ -53,6 +86,10 @@ table th {
     flex: 1;
     font-size: 16px;
     font-family: 'Galindo', sans-serif;
+}
+
+.links-text {
+	text-decoration: underline;
 }
 
 /* //////////////////////////////////////////// */
