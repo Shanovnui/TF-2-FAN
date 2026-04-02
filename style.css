@@ -23,6 +23,7 @@ p {
 
 a {
     text-decoration: none;
+	transition: color 0.2s ease;
 	color: #FF6600;
 }
 
@@ -30,6 +31,8 @@ a:hover {
   text-decoration: underline;
   color: black;
 }
+
+/* //////////////////////////////////////////// */
 
 .left-menu-links {
   color: #FF6600;
@@ -194,6 +197,10 @@ table th {
     font-size: 7px;
 }
 
+.text-menu a {
+    cursor: pointer;
+}
+
 .box-menu {
     width: 150px;
     margin: 0 20px 0px 15px;
@@ -317,6 +324,51 @@ table th {
 
 /* //////////////////////////////////////////// */
 
+.content {
+	border: 1px solid black;
+	width: max-content;
+	padding: 5px;
+	padding-right: 15px;
+}
+ 
+.content-content {
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.content-hide:hover {
+    text-decoration: underline; 
+	cursor: pointer;
+	color: black;
+}
+
+.content-summary {
+	list-style: none;                        
+}
+
+.content-ol {
+  list-style-type: none;
+  counter-reset: item;
+  padding-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.content-li {
+  display: block;
+}
+
+
+.content-li:before {
+  content: counters(item, ".") ". ";
+  counter-increment: item; 
+}
+
+/* //////////////////////////////////////////// */
+
 .steam-tf {
     display: flex;
     flex-direction: row;
@@ -332,6 +384,7 @@ table th {
 
 .img-steam {
     width: 150px;
+	border-radius: 5px;
 }
 
 /* //////////////////////////////////////////// */
@@ -388,7 +441,7 @@ table th {
 
 /* //////////////////////////////////////////// */
 
-.maps-header, .game-modes-header, .customization-header, .origins-header, .Invasion-header, .final-design-header, .release-header, .critical-reception-header, .awards-header, .promotional-events-header,.references-header, .external-links-header { font-size: 24px; }
+.maps-header, .game-modes-header, .customization-header, .origins-header, .e3-1999-header, .Invasion-header, .final-design-header, .release-header, .critical-reception-header, .awards-header, .promotional-events-header,.references-header, .external-links-header { font-size: 24px; }
 
 .secondary-content { display: block;}
 
