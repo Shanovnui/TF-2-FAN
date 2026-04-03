@@ -689,6 +689,7 @@ details[open] .when-closed {
 
     .img-e3-1999 { 
        width: 100%;
+	   margin-bottom: 6px;
     }
 
    .images-row {
@@ -756,4 +757,16 @@ details[open] .when-closed {
 
     #burger-check:checked ~ header .burger-menu span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 
+}
+
+@media (max-width: 396px) {
+	
+	.img-steam {
+        width: 114px;
+        margin-bottom: 10px;
+    }
+	
+	.left-menu {
+		padding-left: 15px;
+	}
 }
