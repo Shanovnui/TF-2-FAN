@@ -626,7 +626,7 @@ details[open] .when-closed {
         transition: 0.4s ease;
         z-index: 1000;
         border-right: 3px solid #FF6600;
-		padding-left: 10px;
+		padding-left: 20px;
     }
 	
     .box-menu, .box-menu2 {
@@ -649,6 +649,7 @@ details[open] .when-closed {
     
     .steam-tf {
         width: 100%;
+		max-width: 380px;
         font-size: 7px;
     }
 
