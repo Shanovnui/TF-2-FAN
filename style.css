@@ -251,15 +251,6 @@ table th {
     z-index: 10;
 }
 
-@media (max-width: 800px) {
-    .box {
-        float: none;   
-        margin: 20px auto; 
-        width: 100%;   
-        max-width: 350px;
-    }
-}
-
 .box-main {
     display: flex;
      justify-content: center;
@@ -421,24 +412,6 @@ table th {
     margin-bottom: 10px; 
 }
 
-@media (max-width: 600px) {
-    .gameplay {
-        float: none;      
-        margin: 0 auto 20px auto; 
-        width: 100%;      
-        max-width: 300px; 
-    }
-
-
-.gameplay-text1 {
-    flex: 1;
-    font-family: 'Galindo', sans-serif;
-    overflow: hidden; 
-    margin-top: 10px;
- } 
-
-}
-
 /* //////////////////////////////////////////// */
 
 .maps-header, .game-modes-header, .customization-header, .origins-header, .e3-1999-header, .Invasion-header, .final-design-header, .release-header, .critical-reception-header, .awards-header, .promotional-events-header,.references-header, .external-links-header { font-size: 24px; }
@@ -557,4 +530,214 @@ details[open] .when-closed {
 	margin-top: 25px;
 }
 
+.burger-menu {
+    display: none; /* Прячем на ПК */
+    flex-direction: row;
+    justify-content: spaсe-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.burger-menu span {
+    width: 30px;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
 /* //////////////////////////////////////////// */
+
+@media (max-width: 768px) {
+
+    main {
+        flex-direction: column;
+        position: relative; /* Это важно для position: absolute у меню */
+        min-height: 100vh;
+    }
+	
+	.main-header {
+        padding-right: 15px; /* Добавляем отступ справа */
+    }
+	
+	.top {
+        display: flex;
+        justify-content: space-between; /* Силовое распределение */
+        box-sizing: border-box;
+        align-items: center;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .shapka {
+        flex: 1; /* Заставляет текст занять всё пространство слева */
+        text-align: left; /* Прижимает текст внутри своего блока влево */
+        padding-left: 0;
+        margin-right: 0; 
+        font-size: 22px;
+        justify-content: center;
+        white-space: nowrap; /* Текст никогда не перенесется */
+
+    }
+	
+	.icon {
+        width: 50px;
+        height: 50px;
+        display: none;
+    }
+	
+	.menu-blocks { display: none; }
+	
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 18px;
+        margin-left: 20px;
+    }
+
+    .left-menu {
+        position: absolute;
+        left: -100%; 
+        top: 0; 
+        padding-top: 10px;
+        width: 200px;
+        min-height: 100vh;
+        height: 100%;
+        background: #2A2A2A;
+        font-size: 8px;
+        transition: 0.4s ease;
+        z-index: 1000;
+        border-right: 3px solid #FF6600;
+    }
+	
+    .box-menu, .box-menu2 {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .box {
+        display: flex;      /* Включаем флекс */
+        flex-direction: column; 
+        align-items: center; /* Центруем контент внутри (картинку, текст) */
+        justify-content: center;
+        float: none !important;  /* Убиваем обтекание, которое тянет блок влево */
+        margin: 20px auto !important; /* Центруем сам блок на странице */
+        width: 100%;         /* Даем ширину, чтобы было от чего центровать */
+        max-width: 350px;   /* Чтобы на больших телефонах не был слишком широким */
+
+    }
+    
+    .steam-tf {
+        width: 100%;
+        font-size: 7px;
+    }
+
+    .img-steam {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+
+
+    .gameplay-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* ЭТО выровняет всё, что внутри, по центру экрана */
+        width: 100%;
+    }
+
+    .gameplay {
+        float: none !important;  /* Убиваем обтекание, которое тянет блок влево */
+        display: flex;
+        flex-direction: column; 
+        align-items: center; /* Центруем контент внутри (картинку, текст) */
+        justify-content: center;
+        width: 100%;
+        padding: 11px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .gameplay-box-text {
+       font-size: 14px;
+       margin-bottom: 0;
+    }
+
+    .gameplay-text {
+       margin: 0;
+    }
+
+    .img-e3-1999 { 
+       width: 100%;
+    }
+
+   .images-row {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: stretch;
+	text-align: center; 
+    gap: 10px;
+    } 
+
+   .alien-img, .commando-img {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    background: #2A2A2A; 
+	max-width: 150px;   
+    margin: 0 !important;
+    }
+
+   .images-row img {
+    width: 100%; 
+    object-fit: contain; 
+    }
+
+   .img-alien {
+    width: 120px !important; 
+    height: 173px !important;
+    }
+
+    .img-commando {
+	width: 80px !important;
+	height: 163px !important;
+    }
+	
+	.engi-img {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+ 		align-items: center;
+		width: 100%;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	
+	.img-engi {
+		width: 100%;
+	}
+	
+    table {
+        font-size: 12px; 
+    }
+	
+	.team-fortress-series-main {
+		font-size: 14px;
+	}
+
+    #burger-check:checked ~ main .left-menu { left: 0; }
+
+    #burger-check:checked ~ header .burger-menu span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+
+    #burger-check:checked ~ header .burger-menu span:nth-child(2) { opacity: 0; transform: scale(0); /* Дополнительно сжимаем среднюю полоску */}
+
+    #burger-check:checked ~ header .burger-menu span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+}
