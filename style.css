@@ -334,6 +334,7 @@ table th {
  
 .content-content {
 	text-align: center;
+    transition: 0.4s ease;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
@@ -361,7 +362,6 @@ table th {
 .content-li {
   display: block;
 }
-
 
 .content-li:before {
   content: counters(item, ".") ". ";
@@ -564,12 +564,12 @@ details[open] .when-closed {
 
     main {
         flex-direction: column;
-        position: relative; /* Это важно для position: absolute у меню */
+        position: relative;
         min-height: 100vh;
     }
 	
 	.main-header {
-        padding-right: 15px; /* Добавляем отступ справа */
+        padding-right: 15px; 
     }
 
 	.line-header {
@@ -578,7 +578,7 @@ details[open] .when-closed {
 	
 	.top {
         display: flex;
-        justify-content: space-between; /* Силовое распределение */
+        justify-content: space-between; 
         box-sizing: border-box;
         align-items: center;
         padding: 0 20px;
@@ -586,13 +586,12 @@ details[open] .when-closed {
     }
 
     .shapka {
-        flex: 1; /* Заставляет текст занять всё пространство слева */
-        text-align: left; /* Прижимает текст внутри своего блока влево */
+       
         padding-left: 0;
         margin-right: 0; 
         font-size: 24px;
         justify-content: center;
-        white-space: nowrap; /* Текст никогда не перенесется */
+        white-space: nowrap; 
 
     }
 	
@@ -636,14 +635,14 @@ details[open] .when-closed {
     }
 
     .box {
-        display: flex;      /* Включаем флекс */
+        display: flex;    
         flex-direction: column; 
-        align-items: center; /* Центруем контент внутри (картинку, текст) */
+        align-items: center;
         justify-content: center;
-        float: none !important;  /* Убиваем обтекание, которое тянет блок влево */
-        margin: 20px auto !important; /* Центруем сам блок на странице */
-        width: 100%;         /* Даем ширину, чтобы было от чего центровать */
-        max-width: 400px;   /* Чтобы на больших телефонах не был слишком широким */
+        float: none !important; 
+        margin: 20px auto !important; 
+        width: 100%;        
+        max-width: 400px; 
 
     }
     
@@ -662,15 +661,15 @@ details[open] .when-closed {
     .gameplay-main {
         display: flex;
         flex-direction: column;
-        align-items: center; /* ЭТО выровняет всё, что внутри, по центру экрана */
+        align-items: center; 
         width: 100%;
     }
 
     .gameplay {
-        float: none !important;  /* Убиваем обтекание, которое тянет блок влево */
+        float: none !important;  
         display: flex;
         flex-direction: column; 
-        align-items: center; /* Центруем контент внутри (картинку, текст) */
+        align-items: center; 
         justify-content: center;
         width: 100%;
         padding: 11px;
@@ -753,7 +752,7 @@ details[open] .when-closed {
 
     #burger-check:checked ~ header .burger-menu span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
 
-    #burger-check:checked ~ header .burger-menu span:nth-child(2) { opacity: 0; transform: scale(0); /* Дополнительно сжимаем среднюю полоску */}
+    #burger-check:checked ~ header .burger-menu span:nth-child(2) { opacity: 0; transform: scale(0); }
 
     #burger-check:checked ~ header .burger-menu span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 
