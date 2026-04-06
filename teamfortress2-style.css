@@ -17,6 +17,10 @@ h1 {
     margin: 0 auto;
 }
 
+h5 {
+    margin: 0 auto;
+}
+
 p {
     line-height: 1.6;
 }
@@ -30,6 +34,7 @@ a {
 a:hover {
   text-decoration: underline;
   color: black;
+  cursor: pointer;
 }
 
 /* //////////////////////////////////////////// */
@@ -40,6 +45,16 @@ a:hover {
 
 .links-text:hover {
 	text-decoration-color: black;
+    cursor: pointer;
+}
+
+.box-links {
+    text-decoration: underline;
+}
+
+.box-links:hover {
+    color: black;
+    cursor: pointer;
 }
 
 .links-text-steamtf2 {
@@ -49,6 +64,7 @@ a:hover {
 
 .links-text-steamtf2:hover {
 	text-decoration: inline;
+    cursor: pointer;
 	color: #FF6600;
 }
 
@@ -58,10 +74,12 @@ a:hover {
 }
 
 .links-text-table:hover {
+    cursor: pointer;
 	color: #2A2A2A;
 }
 
 .links-text-footer:hover {
+    cursor: pointer;
 	color: #2A2A2A;
 }
 
@@ -70,6 +88,7 @@ a:hover {
 }
 
 .links-text-series:hover {
+    cursor: pointer;
 	color: #2A2A2A;
 }
 
@@ -259,6 +278,7 @@ table th {
     height: 100%;
     background: #FF6600;
     z-index: 10;
+    overflow: hidden;
 }
 
 .box-main {
@@ -272,6 +292,7 @@ table th {
     font-size: 12px;
     width: 100%;
     border: 1px solid black;
+    padding: 1px;
 }
 
 .box-name {
@@ -319,8 +340,30 @@ table th {
     padding: 5px;
 }
 
+.box ul {
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 3px;
+}
+
+.box summary {
+    list-style: none; 
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+summary:hover {
+    color: black;
+    transition: 0.2s;
+}
+
 .li {
     font-size: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
 }
 
 /* //////////////////////////////////////////// */
@@ -541,9 +584,9 @@ details[open] .when-closed {
 }
 
 .burger-menu {
-    display: none; 
+    display: none; /* Прячем на ПК */
     flex-direction: row;
-    justify-content: spae-around;
+    justify-content: spaсe-around;
     width: 30px;
     height: 25px;
     cursor: pointer;
@@ -596,6 +639,8 @@ details[open] .when-closed {
     }
 	
 	.icon {
+        width: 50px;
+        height: 50px;
         display: none;
     }
 	
