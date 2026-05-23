@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  outline: none !important;
 }
 
 body {
@@ -398,7 +397,7 @@ summary:hover {
   counter-reset: item;
   padding-left: 20px;
   margin-top: 5px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   margin-right: 0px;
   margin-left: 0px;
 }
@@ -563,8 +562,6 @@ details[open] .when-closed {
 	padding-top: 5px;
 }
 
-.series {}
-
 .cancelled-games { background: black; padding-top: 2px; padding-bottom: 2px;}
 
 /* //////////////////////////////////////////// */
@@ -582,10 +579,15 @@ details[open] .when-closed {
 	width: 100%;
     background: black;
 	margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    margin-bottom: 20px;
 }
 
 .burger-menu {
-    display: none; 
+    display: none;
     flex-direction: row;
     justify-content: space-around;
     width: 30px;
@@ -677,7 +679,7 @@ details[open] .when-closed {
 
     #burger-check:checked ~ header .burger-menu span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 
-	}
+}
 
 @media (max-width: 768px) {
 
@@ -888,4 +890,4 @@ details[open] .when-closed {
 		padding-left: 10px;
 	}
 }
-#
+
