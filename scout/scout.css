@@ -442,16 +442,29 @@ table th {
     margin-right: 5px;
 }
 
+.medic-mini-icon {
+    width: 15px;
+    vertical-align: text-top;
+}
+
+.mini-item-icon {
+    width: 36px;
+    vertical-align: text-top;
+}
+
 /* //////////////////////////////////////////// */
 
-.primary-text-table {
+.primary-text-table, .secondary-text-table, .melee-text-table, .taunt-attack-text-table, .ability-taunt-text-table, .item-sets-text-table {
     margin-top: 20px;
     margin-bottom: 5px;
 }
 
-.secondary-text-table {
-    margin-top: 20px;
-    margin-bottom: 5px;
+.img-table-padding {
+    padding: 10px 10px 2.5px 10px;
+}
+
+.table-item-sets {
+    margin-bottom: 30px;
 }
 
 /* //////////////////////////////////////////// */
